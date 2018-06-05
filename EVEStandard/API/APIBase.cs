@@ -23,7 +23,7 @@ namespace EVEStandard.API
         private static HttpClient http;
         private readonly string dataSource;
 
-        public static readonly string ESI_BASE = "https://esi.evetech.net";
+        internal static string ESI_BASE = "https://esi.evetech.net";
 
         internal HttpClient HTTP { get => http; set => http = value; }
 
