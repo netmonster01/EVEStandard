@@ -171,7 +171,7 @@ namespace EVEStandard.API
                 { "include_completed", includeCompleted.ToString() }
             };
 
-            var responseModel = await GetAsync($"/v1/corporation/{corporationId}/industry/jobs/", auth, ifNoneMatch, queryParameters);
+            var responseModel = await GetAsync($"/v1/corporations/{corporationId}/industry/jobs/", auth, ifNoneMatch, queryParameters);
 
             CheckResponse(nameof(ListCorporationIndustryJobsV1Async), responseModel.Error, responseModel.Message, responseModel.LegacyWarning, logger);
 
